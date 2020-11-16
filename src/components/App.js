@@ -5,16 +5,16 @@ function App() {
   let [count, setCount] = useState(0);
 
   return (
-    <div class="ball">
+    <div className="ball">
       <h1
-        class="count"
+        className="count"
         onDoubleClick={() => {
           alert("cant edit it");
         }}
       >
         {count}
       </h1>
-      <button class="increment-button" onClick={() => setCount(count + 1)}>
+      <button className="increment-button" onClick={() => setCount(count + 1)}>
         Increment
       </button>
     </div>
